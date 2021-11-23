@@ -1,20 +1,14 @@
-import React from 'react';
+import React from "react";
 
 function DisplaySimpson({ simpson }) {
   return (
     simpson && (
-      <div className='DisplaySimpson'>
+      <div className="DisplaySimpson">
         <img src={simpson.image} alt={simpson.character} />
         <ul>
-          <li>
-          Nom: {simpson.character}
-          </li>
-          <li>
-          Direction: {simpson.characterDirection}
-          </li>
-          <li>
-          Bete de phrase: {simpson.quote}
-          </li>
+          <h1>Simpson Character</h1>
+          <li>Name: {simpson.character}</li>
+          <li>Quote: {simpson.quote}</li>
         </ul>
       </div>
     )
